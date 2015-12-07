@@ -23,7 +23,7 @@ type Request struct {
 	Region   string
 	Language string
 
-	Sensor bool
+	Sensor bool // No longer used by the geocoding API.
 
 	values url.Values
 }
@@ -49,7 +49,6 @@ func (r *Request) Values() url.Values {
 	if r.Language != "" {
 		v.Set("language", r.Language)
 	}
-	v.Set("sensor", strconv.FormatBool(r.Sensor))
 	return v
 }
 
