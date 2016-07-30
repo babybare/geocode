@@ -8,7 +8,6 @@ import (
 	"fmt"
 	"net/http"
 	"net/url"
-	"strconv"
 )
 
 const api = "http://maps.googleapis.com/maps/api/geocode/json"
